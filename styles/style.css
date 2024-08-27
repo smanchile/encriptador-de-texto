@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color-primario: #E5E5E5;
+  --color-secundario: #0A3871;
+  --color-terciario: #FFFFFF;
+  --color-cuartenario:#495057;
+  --color-boton: #D8DFE8;
+
+  --fuente-inter: 'Inter', sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background: var(--color-primario);
+  color: var(--color-secundario);
+  font-family: var(--fuente-inter);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.header{
+}
+
+.header__imagen{
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 2rem;
+}
+
+.contenido{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+ }
+
+.contenido__entrada{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+}
+
+.contenido__entrada__cuadro{
+  border: none;
+  outline: none;
+  background-color: var(--color-terciario);
+  resize: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: none;
+  height: 55vh;
+  text-transform: lowercase;
+}
+
+.contenido__entrada__cuadro::placeholder{
+  color: var(--color-secundario);
+}
+
+.contenido__entrada__informacion{
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.contenido__entrada__informacion__texto{
+  font-size: 0.6rem;
+  color: var(--color-cuartenario);
+}
+
+
+.contenido__entrada__botones{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+button{
+  font-size: 1rem;
+  padding: 0.5  rem 1.5rem;
+  width: 250px;
+  height: 55px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.contenido__entrada__botones__encriptador{
+  background: var(--color-secundario);
+  color: var(--color-terciario);
+  border: 1px solid var(--color-secundario);
+}
+
+.contenido__entrada__botones__encriptador:hover{
+  background-color: var(--color-cuartenario);
+}
+
+.contenido__entrada__botones__desencriptador{
+  background: var(--color-boton);
+  color: var(--color-secundario);
+  border: 1px solid var(--color-secundario);
+}
+
+.contenido__entrada__botones__desencriptador:hover{
+  background-color: var(--color-cuartenario);
+  color: var(--color-terciario);
+}
+
+.contenido__resultado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-terciario);
+  overflow: hidden;
+  border-radius: 2%;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-left: 2%;
+  width: 20%;
+}
+
+.contenido__resultado__cuadro{
+  background-color: var(--color-terciario);
+  background-image: url('/assets/muneco.png');
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 55vh;
+  flex-grow: 1;
+  font-size: 1rem;
+  text-transform:lowercase;
+}
+
+.contenido__resultado__mensaje{
+  background-color: var(--color-terciario);
+  width: 90%;
+}
+
+.contenido__resultado__mensaje__titulo{
+  font-family: var(--fuente-inter);
+  font-size: 1.3rem;
+  font-weight:bold;
+  text-align: center;
+  background-color:transparent;
+  color: var(--color-cuartenario);
+}
+
+.contenido__resultado__mensaje__texto{
+  font-family: var(--fuente-inter);
+  font-size: 0.6rem;
+  text-align: center;
+  background-color:transparent;
+  color: var(--color-cuartenario);
+}
+
+.contenido__resultado__botones{
+  background-color: var(--color-terciario);
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3%;
+}
+
+.contenido__resultado__copiar{
+  background: var(--color-terciario);
+  color: var(--color-secundario);
+  border: 1px solid var(--color-secundario);
+  align-items: center;
+}
+
+.contenido__resultado__copiar:hover{
+  background-color: var(--color-cuartenario);
+  color: var(--color-terciario);
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 3%;
+
+}
+
+.footer__texto{
+  font-size: 0.9rem;
+  color: var(--color-secundario);
+}
+
+a{
+  font-size: 0.9rem;
+  color: var(--color-secundario);
+}
+
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+  .contenido{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+  .contenido__entrada{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenido__entrada__cuadro{
+    height: 55vh;
+    font-size: 1rem;
+  }
+
+  .contenido__entrada__cuadro::placeholder{
+    text-align: left;
+  }
+
+  .contenido__entrada__botones{
+    flex-direction:row;
+    gap: 1rem;
+    width: 90%;
+    align-items: center;
+  }
+
+  button{
+    width: 45%;
+    max-width: 90%;
+  }
+
+  .contenido__resultado{
+    width: 90%;
+    margin-top: 2%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .contenido__resultado__botones{
+    flex-direction:row;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .contenido__resultado__copiar{
+    width: 80%;
+    max-width: 400px;
+    background: var(--color-terciario);
+    color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+  }
+
+  .footer{
+    margin-top: 2%;
+  }
+
+  .footer__texto{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+}
+
+
+
+
+/*Movil*/
+@media (max-width: 380px) {
+  .header{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 0.1rem;
+    margin-top: 1%;
+    padding: 0;
+  }
+
+  .header__imagen{
+    width: 1.5rem;
+  }
+  .contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+  }
+
+  .contenido__entrada, .contenido__resultado{
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+    padding: 0;
+
+  }
+
+  .contenido__entrada__cuadro{
+    font-size: 0.8rem;
+    height: 55vh;
+  }
+
+  .contenido__entrada__botones{
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contenido__resultado__cuadro{
+    font-size: 0.9rem;
+    height: 100vh;
+    background-image: none;
+
+  }
+
+  .contenido__resultado__botones{
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contenido__resultado__copiar{
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 2%;
+  }
+
+  button{
+    width: 100%;
+  }
+
+  .footer{
+    margin-top: 1%;
+  }
+
+  .footer__texto{
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+}
+

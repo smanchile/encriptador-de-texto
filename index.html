@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <img class="header__imagen" src="./assets/logo.png" alt="Logo Alura">
+  </header>
+  <main class="contenido">
+    <section class="contenido__entrada">
+      <textarea class="contenido__entrada__cuadro" onclick="reiniciar()"  cols="30" rows="10"  placeholder="Ingrese el texto aqui" ></textarea>
+      <div class="contenido__entrada__informacion">
+        <p class="contenido__entrada__informacion__texto">Solo letras minúsculas y sin acentos</p>
+      </div>
+      <div class="contenido__entrada__botones">
+        <button class="contenido__entrada__botones__encriptador" onclick="btnEncriptar();">Encriptar</button>
+        <button class="contenido__entrada__botones__desencriptador" onclick="btnDesencriptar();">Desincriptar</button>
+      </div>
+    </section>
+    <section class="contenido__resultado">
+      <textarea id="resultado"  class="contenido__resultado__cuadro" cols="20" rows="10" ></textarea>
+      <div class="contenido__resultado__mensaje">
+        <h6 class="contenido__resultado__mensaje__titulo">Ningún mensaje fue encontrado</h6>
+        <p class="contenido__resultado__mensaje__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <div class="contenido__resultado__botones">
+        <button class="contenido__resultado__copiar" onclick="copiarTexto();">Copiar</button>
+      </div>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__texto">Desarrollado por <a href="https://www.linkedin.com/in/andr%C3%A9s-aguilar-4bb01254/" target="_blank">Andrés Aguilar</a>  @2024</p>
+  </footer>
+
+  <script src="encriptador.js"></script>
+
+
+</body>
+</html>
