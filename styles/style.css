@@ -130,7 +130,7 @@ button{
 
 .contenido__resultado__cuadro{
   background-color: var(--color-terciario);
-  background-image: url('/assets/muneco.png');
+  background-image: url('./assets/muneco.png');
   background-repeat: no-repeat;
   border: none;
   outline: none;
