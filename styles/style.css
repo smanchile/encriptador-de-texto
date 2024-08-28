@@ -216,12 +216,12 @@ a{
   }
 
   .contenido__entrada{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 80%;
+    max-width: 600px;
   }
 
   .contenido__entrada__cuadro{
