@@ -80,3 +80,5 @@ function validaEntrada(input){
   const regex = /^[a-z\s]+$/;
   return regex.test(input);
 }
+
+mensaje.style.backgroundImage = 'url("./assets/muneco.png")';
