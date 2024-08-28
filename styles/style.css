@@ -231,6 +231,7 @@ a{
 
   .contenido__entrada__cuadro::placeholder{
     text-align: left;
+    padding-left: 2%;
   }
 
   .contenido__entrada__botones{
