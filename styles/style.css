@@ -212,7 +212,7 @@ a{
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 100%;
+    width: 90%;
   }
 
   .contenido__entrada{
@@ -239,6 +239,7 @@ a{
     gap: 1rem;
     width: 90%;
     align-items: center;
+    font-size: 0.8rem;
   }
 
   button{
