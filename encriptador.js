@@ -8,7 +8,7 @@ const btnCopiar = document.querySelector('.contenido__resultado__botones');
 function reiniciar(){
   entrada.value = '';
   mensaje.value = '';
-  mensaje.style.backgroundImage = 'url("/assets/muneco.png")';
+  mensaje.style.backgroundImage = 'url("./assets/muneco.png")';
   tituloMensaje.style.display = 'flex';
   textoMensaje.style.display = 'flex';
   btnCopiar.style.display = 'none';
