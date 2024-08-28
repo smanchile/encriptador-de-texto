@@ -227,7 +227,7 @@ a{
   .contenido__entrada__cuadro{
     height: 55vh;
     font-size: 1rem;
-    margin-left: 10%;
+    margin-left: 30%;
   }
 
   .contenido__entrada__cuadro::placeholder{
